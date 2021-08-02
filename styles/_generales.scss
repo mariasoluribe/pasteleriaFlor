@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$titulo:'Sriracha', cursive;
+$texto: arial, sans-serif;
+
+$colorgeneral: black;
+$colorprincipal: #ACB5F5;
+$colorsecundario: #f8bef6;
+$colorterciario: #ADEDDE;
+
+$sombreado: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+
+
+h1, h2, h3 {
+    font-family: $titulo;
+    color: $colorgeneral;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+a, p {
+    font-family: $texto;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
+    color: $colorgeneral;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    font-family: $texto;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}

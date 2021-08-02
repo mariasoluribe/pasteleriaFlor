@@ -1,0 +1,64 @@
+.paraTransicion:hover {
+    cursor: pointer;
+    transition: 3s;
+    font-size: 3rem;
+}
+
+.contenedorTienda{
+    padding: 1.8rem 0;
+    margin-top: 2rem;    
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);     
+    grid-row-gap: 30px;
+
+
+    article{
+        color: black; 
+        font-size: 15px;   
+        display: grid;
+        grid-template-columns: auto; 
+        grid-template-rows: auto auto auto;
+        align-items: center;  
+        justify-items: center;
+        margin: 5px; 
+        grid-gap: 0.5rem;   
+    }
+
+    img{   
+        grid-row: 1;   
+    }
+    .descripcion {   
+        grid-row: 2;   
+    }
+    .precio {   
+        grid-row: 3;   
+    }
+    .boton{   
+        grid-row: 4;
+        padding: 0.3rem;
+    }
+
+    .boton{
+        padding: 0.4rem;
+        border-color: whitesmoke;
+        background-color:#ACB5F5;
+        border-radius: 0.2rem;
+        cursor: pointer;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 0.80rem;
+        color: black;
+        box-shadow: $sombreado;
+    
+        &:hover{
+            border-color: white;  
+            color: white;  
+            background-color: rgb(117, 35, 211);
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,119 @@
+header{
+    background-color: $colorprincipal;
+    padding: 16px 0;
+    box-shadow: $sombreado;
+
+
+    .header-container { //anidamiento 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+        .menu-abrir, .menu-cerrar {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+        }
+            
+    .container__logo{
+        flex-basis: 30%;
+
+        @media (max-width: 768px) {
+                    margin-bottom: 20px;
+        }
+
+    }
+                
+    @media (max-width: 552px) {
+        flex-direction: row;
+        justify-content: space-around;
+
+        .container__logo {
+            flex-basis: 70%;
+            margin-bottom: 0;
+        }
+        
+        .menu-abrir, .menu-cerrar {
+            display: block;
+        }
+        
+        nav {
+            position: absolute;
+            top:-500%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: $colorprincipal;
+            padding-top: 14px 0;
+            transition: top .4s ease-out;
+
+
+                a {
+                    color: black;
+   
+                }
+
+
+                &:target {
+                    margin-top: -16px;
+                    top: 0;
+                }
+            }
+        
+        }
+
+
+        nav {
+            flex-basis: 65%;
+            display: flex;
+            justify-content: flex-end;
+
+        a{
+            margin-left: 20px;
+            padding: 5px 10px;
+
+            &:hover { //pseudo selector
+                background-color: rgb(111, 70, 209);
+                color: white;
+            }
+        }
+
+        }
+
+
+    }
+}
+
+// @media (max-width: 768px) {
+//     header {
+//         .header-container{
+//             flex-direction: column;
+//             align-items: center;
+
+//             .container__logo{
+//                 margin-bottom: 20px;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 552px) {
+
+//     flex-direction: row;
+//     justify-content: space-around;
+
+//     .menu-abrir, .menu-cerrar {
+//         display: block;
+//     }
+
+//     nav {
+//         position: absolute;
+//         top:-400%;
+//     }
+
+// }

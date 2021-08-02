@@ -1,0 +1,31 @@
+.historiaFlor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items:flex-start;
+    
+    .historiaFlorFoto{
+        border-radius: 5px;
+        transition: transform .2s;
+        width: 401px;
+        height: 276px;
+        margin: 0 auto;
+        cursor: pointer;
+
+        &:hover {
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+          }
+    }
+
+    .parrafo{
+        font-size: 16px;
+        padding: 4%;
+        margin-bottom: 50px;
+        text-align: justify;
+    }
+
+  
+
+}
