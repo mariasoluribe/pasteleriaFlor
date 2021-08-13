@@ -327,10 +327,6 @@ body {
 
 .mainIndex .contenedorDulce img .zoom {
   padding: 50px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
