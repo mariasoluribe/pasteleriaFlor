@@ -269,6 +269,18 @@ body {
   margin-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .mainIndex .tarjeta {
+    margin: 30px;
+  }
+}
+
+@media (max-width: 552px) {
+  .mainIndex .tarjeta {
+    margin: 20px;
+  }
+}
+
 .mainIndex .tarjeta .tarjeta__img {
   width: 270px;
   height: 280px;
@@ -277,13 +289,13 @@ body {
 }
 
 .mainIndex .tarjeta .tarjeta__titulo {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 20px;
 }
 
 .mainIndex .tarjeta .tarjeta__parrafo {
   line-height: 28px;
-  font-size: 20px;
+  font-size: 1.3rem;
   margin-bottom: 15px;
 }
 
@@ -317,26 +329,21 @@ body {
   grid-gap: 0.7rem;
 }
 
+@media (max-width: 768px) {
+  .mainIndex .contenedorDulce {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[1];
+        grid-template-columns: repeat(1, 0.5fr);
+  }
+}
+
 .mainIndex .contenedorDulce img {
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   padding: 5px;
   border-radius: 5%;
   cursor: pointer;
-}
-
-.mainIndex .contenedorDulce img .zoom {
-  padding: 50px;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-.mainIndex .contenedorDulce img .zoom:hover {
-  /* IE 9 */
-  -webkit-transform: scale(1.5);
-  /* Safari 3-8 */
-  transform: scale(1.5);
 }
 
 .mainIndex .articulos {
@@ -419,6 +426,21 @@ body {
           align-items: flex-start;
 }
 
+@media (max-width: 768px) {
+  .historiaFlor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 552px) {
+  .historiaFlor {
+    margin: 40px;
+  }
+}
+
 .historiaFlor .historiaFlorFoto {
   border-radius: 5px;
   -webkit-transition: -webkit-transform .2s;
@@ -439,10 +461,33 @@ body {
 }
 
 .historiaFlor .parrafo {
-  font-size: 16px;
+  font-size: 1rem;
   padding: 4%;
   margin-bottom: 50px;
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .contenedorIndex {
+    margin: 60px;
+    font-size: 1rem;
+  }
+  .contenedorIndex .tarjeta__titulo {
+    font-size: 1rem;
+  }
+  .contenedorIndex .boton {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 552px) {
+  .contenedorIndex {
+    margin: 40px;
+    font-size: 0.5rem;
+  }
+  .contenedorIndex .tarjeta__titulo {
+    font-size: 0.5rem;
+  }
 }
 
 .paraTransicion:hover {
@@ -464,9 +509,28 @@ body {
   grid-row-gap: 30px;
 }
 
+@media (max-width: 768px) {
+  .contenedorTienda {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 552px) {
+  .contenedorTienda {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+  }
+}
+
 .contenedorTienda article {
   color: black;
-  font-size: 15px;
+  font-size: 1rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
@@ -533,6 +597,18 @@ body {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .formulario {
+    margin: 40px;
+  }
+}
+
+@media (max-width: 552px) {
+  .formulario {
+    margin: 20px;
+  }
 }
 
 .formulario form {

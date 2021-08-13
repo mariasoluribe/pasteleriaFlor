@@ -3,6 +3,18 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items:flex-start;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+    }
+
+    @media (max-width: 552px) {
+        margin: 40px;
+       
+    }
+
+
     
     .historiaFlorFoto{
         border-radius: 5px;
@@ -20,7 +32,7 @@
     }
 
     .parrafo{
-        font-size: 16px;
+        font-size: 1rem;
         padding: 4%;
         margin-bottom: 50px;
         text-align: justify;
