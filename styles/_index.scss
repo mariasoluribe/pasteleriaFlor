@@ -91,13 +91,19 @@ body{
 
     .contenedorDulce{
         display: grid;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(1,1fr);
         grid-gap: 0.7rem;
 
         @media (max-width: 768px) {
             display: grid;
-            grid-template-columns:repeat(1,0.5fr);
+            grid-template-columns:repeat(2,0.5fr);
+        }
+
+        @media (max-width: 552px) {
+            display: grid;
+            grid-template-columns:repeat(1,1fr);
+            margin: 40px;
         }
 
         img{
@@ -106,22 +112,13 @@ body{
             padding: 5px;
             border-radius: 5%;
             cursor: pointer;
+            align-items: center;
 
-            //no funciona 
-
-            // .zoom{
-            //     padding: 50px;
-            //     width: 200px;
-            //     height: 200px;
-            //     margin: 0 auto;
-
-            //     &:hover {
-            //         -ms-transform: scale(1.5); /* IE 9 */
-            //         -webkit-transform: scale(1.5); /* Safari 3-8 */
-            //         transform: scale(1.5); 
-            //     }
-
-            // }
+            &:hover {
+                    -ms-transform: scale(1.2); /* IE 9 */
+                    -webkit-transform: scale(1.2); /* Safari 3-8 */
+                    transform: scale(1.2); 
+                }
 
 
         }

@@ -322,8 +322,8 @@ body {
 .mainIndex .contenedorDulce {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   grid-gap: 0.7rem;
@@ -333,8 +333,18 @@ body {
   .mainIndex .contenedorDulce {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (0.5fr)[1];
-        grid-template-columns: repeat(1, 0.5fr);
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+
+@media (max-width: 552px) {
+  .mainIndex .contenedorDulce {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    margin: 40px;
   }
 }
 
@@ -344,6 +354,16 @@ body {
   padding: 5px;
   border-radius: 5%;
   cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainIndex .contenedorDulce img:hover {
+  /* IE 9 */
+  -webkit-transform: scale(1.2);
+  /* Safari 3-8 */
+  transform: scale(1.2);
 }
 
 .mainIndex .articulos {
