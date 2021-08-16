@@ -2,7 +2,6 @@ body{
     background-color: $colorsecundario;
     font-style:normal;
     font-size: 100%;
-    widows: vh100;
 }
 
 .mainIndex{
@@ -39,11 +38,17 @@ body{
 
 
         @media (max-width: 768px) {
-            margin: 30px;        
+            align-items: center;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;         
         }
 
         @media (max-width: 552px) {
-            margin: 20px; 
+            align-items: center;
+            margin: 20px;
+            display: flex;
+            flex-direction: column; 
         }
 
         .tarjeta__img {
@@ -93,11 +98,12 @@ body{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(1,1fr);
-        grid-gap: 0.7rem;
+        margin: 30px;
 
         @media (max-width: 768px) {
             display: grid;
             grid-template-columns:repeat(2,0.5fr);
+            margin: 40px;
         }
 
         @media (max-width: 552px) {

@@ -7,10 +7,16 @@
     @media (max-width: 768px) {
         display: grid;
         grid-template-columns:repeat(1,1fr);
+        margin: 40px;
+
     }
 
     @media (max-width: 552px) {
         margin: 40px;
+
+        .historiaFlorFoto{
+            margin: 40px;
+        }
        
     }
 

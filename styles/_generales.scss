@@ -24,6 +24,7 @@ h1, h2, h3 {
 h1{
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 a, p {
@@ -46,3 +47,18 @@ li {
     max-width: 900px;
     margin: 0 auto;
 }
+
+//para solucionar lo del footer
+
+// nav{ 
+//     widows: vh10;
+// }
+
+// body{
+//     widows: vh80;
+// }
+
+// footer{
+//     widows: vh10;
+
+// }

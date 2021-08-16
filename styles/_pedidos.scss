@@ -5,8 +5,7 @@
 }
 
 .contenedorTienda{
-    padding: 1.8rem 0;
-    margin-top: 2rem;    
+    padding: 1.9rem 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(2,1fr);     
@@ -36,7 +35,8 @@
         grid-gap: 0.5rem;   
     }
 
-    img{   
+    img{  
+        border-radius: 8px; 
         grid-row: 1;   
     }
     .descripcion {   

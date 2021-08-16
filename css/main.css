@@ -13,6 +13,7 @@ h1, h2, h3 {
 h1 {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 a, p {
@@ -225,7 +226,6 @@ body {
   background-color: #f8bef6;
   font-style: normal;
   font-size: 100%;
-  widows: vh100;
 }
 
 .mainIndex {
@@ -271,13 +271,33 @@ body {
 
 @media (max-width: 768px) {
   .mainIndex .tarjeta {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media (max-width: 552px) {
   .mainIndex .tarjeta {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -326,7 +346,7 @@ body {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
-  grid-gap: 0.7rem;
+  margin: 30px;
 }
 
 @media (max-width: 768px) {
@@ -335,6 +355,7 @@ body {
     display: grid;
     -ms-grid-columns: (0.5fr)[2];
         grid-template-columns: repeat(2, 0.5fr);
+    margin: 40px;
   }
 }
 
@@ -452,11 +473,15 @@ body {
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    margin: 40px;
   }
 }
 
 @media (max-width: 552px) {
   .historiaFlor {
+    margin: 40px;
+  }
+  .historiaFlor .historiaFlorFoto {
     margin: 40px;
   }
 }
@@ -487,25 +512,66 @@ body {
   text-align: justify;
 }
 
+.contenedorBlog {
+  font-size: 1rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.contenedorBlog .menuBox {
+  margin: 10px;
+}
+
+.contenedorBlog .lista {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedorBlog .botonBlog {
+  margin-top: 10px;
+  padding: 0.4rem;
+  border-color: whitesmoke;
+  background-color: #ACB5F5;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 0.80rem;
+  color: black;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenedorBlog .botonBlog:hover {
+  border-color: white;
+  color: white;
+  background-color: #7523d3;
+}
+
 @media (max-width: 768px) {
-  .contenedorIndex {
+  .contenedorBlog {
     margin: 60px;
     font-size: 1rem;
   }
-  .contenedorIndex .tarjeta__titulo {
+  .contenedorBlog .tarjeta__titulo {
     font-size: 1rem;
   }
-  .contenedorIndex .boton {
+  .contenedorBlog .boton {
     margin-top: 10px;
   }
 }
 
 @media (max-width: 552px) {
-  .contenedorIndex {
+  .contenedorBlog {
     margin: 40px;
     font-size: 0.5rem;
   }
-  .contenedorIndex .tarjeta__titulo {
+  .contenedorBlog .tarjeta__titulo {
     font-size: 0.5rem;
   }
 }
@@ -518,8 +584,7 @@ body {
 }
 
 .contenedorTienda {
-  padding: 1.8rem 0;
-  margin-top: 2rem;
+  padding: 1.9rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -566,6 +631,7 @@ body {
 }
 
 .contenedorTienda img {
+  border-radius: 8px;
   -ms-grid-row: 1;
   grid-row: 1;
 }
