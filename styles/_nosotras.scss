@@ -1,8 +1,14 @@
+//solucionar lo del footer
+.medidasMain{
+    height: 80vh;
+}
+
 .historiaFlor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
-    align-items:flex-start;
+    align-items:center;
+    justify-content: center;
 
     @media (max-width: 768px) {
         display: grid;
