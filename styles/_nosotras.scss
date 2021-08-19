@@ -1,15 +1,10 @@
-//solucionar lo del footer
-.medidasMain{
-    height: 80vh;
-    margin-bottom: 50px;
-}
-
 .historiaFlor{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     align-items:center;
     justify-content: center;
+    margin-bottom: 40vh;  //para el footer
 
     @media (max-width: 768px) {
         display: grid;
@@ -32,8 +27,7 @@
     .historiaFlorFoto{
         border-radius: 5px;
         transition: transform .2s;
-        width: 401px;
-        height: 276px;
+        width: 70%;
         margin: 0 auto;
         cursor: pointer;
 

@@ -41,14 +41,23 @@ body{
             align-items: center;
             margin: 30px;
             display: flex;
-            flex-direction: column;         
+            flex-direction: column;
+            
+            .quote-box{
+                margin: 40px;
+            }
         }
 
         @media (max-width: 552px) {
             align-items: center;
             margin: 20px;
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
+
+            .quote-box{
+                margin: 50px;
+            }
+
         }
 
         .tarjeta__img {

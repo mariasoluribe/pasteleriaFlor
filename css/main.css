@@ -6,14 +6,19 @@
 }
 
 h1, h2, h3 {
-  font-family: "Sriracha", cursive;
+  font-family: "Sriracha", arial;
   color: black;
 }
 
 h1 {
+  font-size: 2rem;
   text-align: center;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1rem;
 }
 
 a, p {
@@ -35,6 +40,22 @@ li {
 .container {
   max-width: 900px;
   margin: 0 auto;
+}
+
+.subir {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px;
+}
+
+.subir a .logoSubir {
+  color: black;
+  font-size: 2rem;
+}
+
+.subir a .logoSubir:hover {
+  color: #ADEDDE;
 }
 
 header {
@@ -159,6 +180,9 @@ footer {
 
 footer p {
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px 0;
   font-size: 12px;
   color: white;
@@ -283,6 +307,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .mainIndex .tarjeta .quote-box {
+    margin: 40px;
+  }
 }
 
 @media (max-width: 552px) {
@@ -298,6 +325,9 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mainIndex .tarjeta .quote-box {
+    margin: 50px;
   }
 }
 
@@ -455,11 +485,6 @@ body {
   position: relative;
 }
 
-.medidasMain {
-  height: 80vh;
-  margin-bottom: 50px;
-}
-
 .historiaFlor {
   display: -ms-grid;
   display: grid;
@@ -473,6 +498,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40vh;
 }
 
 @media (max-width: 768px) {
@@ -500,8 +526,7 @@ body {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   transition: transform .2s, -webkit-transform .2s;
-  width: 401px;
-  height: 276px;
+  width: 70%;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -678,6 +703,10 @@ body {
   border-color: white;
   color: white;
   background-color: #7523d3;
+}
+
+.mainFormulario {
+  margin-bottom: 40vh;
 }
 
 .formulario {
