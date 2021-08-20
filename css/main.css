@@ -590,8 +590,18 @@ body {
 
 @media (max-width: 768px) {
   .contenedorBlog {
-    margin: 30px;
     font-size: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contenedorBlog .menuBox {
     font-size: 1rem;
@@ -607,8 +617,18 @@ body {
 
 @media (max-width: 552px) {
   .contenedorBlog {
-    margin: 20px;
     font-size: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contenedorBlog .tarjeta__titulo {
     font-size: 0.5rem;
