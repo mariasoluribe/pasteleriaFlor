@@ -34,9 +34,12 @@
         }
     
     @media (max-width: 768px) {
-        margin: 60px;  
+        margin: 50px;  
         font-size: 1rem;
 
+        .menuBox{
+            font-size: 1rem;
+        }
 
         .tarjeta__titulo{
             font-size: 1rem;
@@ -44,13 +47,14 @@
         }
 
         .boton{
+            font-size: 1rem;
             margin-top: 10px;
         }
 
     }
 
     @media (max-width: 552px) {
-        margin: 40px;
+        margin: 30px;
         font-size: 0.5rem;
 
         .tarjeta__titulo{

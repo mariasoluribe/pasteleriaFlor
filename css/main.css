@@ -372,8 +372,8 @@ body {
 .mainIndex .contenedorDulce {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[1];
       grid-template-rows: repeat(1, 1fr);
   margin: 30px;
@@ -424,7 +424,6 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: violet;
   padding: 40px 20px;
   border-radius: 10px;
 }
@@ -443,8 +442,11 @@ body {
 
 .mainIndex .container {
   margin-top: 50px;
-  width: 400px;
+  width: 310px;
   margin-bottom: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .mainIndex .quote {
@@ -454,7 +456,7 @@ body {
   color: #fff;
   margin: 0;
   padding: 20px;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
 
 .mainIndex .name {
@@ -462,7 +464,7 @@ body {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.2rem;
   padding: 20px;
   text-align: center;
 }
@@ -588,20 +590,24 @@ body {
 
 @media (max-width: 768px) {
   .contenedorBlog {
-    margin: 60px;
+    margin: 50px;
+    font-size: 1rem;
+  }
+  .contenedorBlog .menuBox {
     font-size: 1rem;
   }
   .contenedorBlog .tarjeta__titulo {
     font-size: 1rem;
   }
   .contenedorBlog .boton {
+    font-size: 1rem;
     margin-top: 10px;
   }
 }
 
 @media (max-width: 552px) {
   .contenedorBlog {
-    margin: 40px;
+    margin: 30px;
     font-size: 0.5rem;
   }
   .contenedorBlog .tarjeta__titulo {
@@ -672,6 +678,7 @@ body {
 .contenedorTienda .descripcion {
   -ms-grid-row: 2;
   grid-row: 2;
+  font-weight: bold;
 }
 
 .contenedorTienda .precio {
