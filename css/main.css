@@ -590,7 +590,7 @@ body {
 
 @media (max-width: 768px) {
   .contenedorBlog {
-    margin: 50px;
+    margin: 30px;
     font-size: 1rem;
   }
   .contenedorBlog .menuBox {
@@ -607,7 +607,7 @@ body {
 
 @media (max-width: 552px) {
   .contenedorBlog {
-    margin: 30px;
+    margin: 20px;
     font-size: 0.5rem;
   }
   .contenedorBlog .tarjeta__titulo {
